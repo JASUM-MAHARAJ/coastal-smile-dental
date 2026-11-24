@@ -1,0 +1,509 @@
+/* Coastal Smile Dental Studio - Multi-Page Clinical Theme */
+:root {
+  --teal-primary: #0d9488;
+  --teal-dark: #0f766e;
+  --teal-light: #f0fdfa;
+  --slate-dark: #0f172a;
+  --slate-muted: #475569;
+  --bg-soft: #f8fafc;
+  --white: #ffffff;
+  --border-light: #e2e8f0;
+  --radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-soft);
+  color: var(--slate-dark);
+  line-height: 1.65;
+}
+
+/* Top Clinic Info Bar */
+.top-info-bar {
+  background-color: var(--teal-dark);
+  color: var(--white);
+  text-align: center;
+  padding: 0.45rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Sticky Navigation */
+.site-header {
+  background-color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.nav-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--slate-dark);
+  text-decoration: none;
+  letter-spacing: -0.3px;
+}
+
+.logo span {
+  color: var(--teal-primary);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.8rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--slate-muted);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--teal-primary);
+  font-weight: 700;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.85rem 1.75rem;
+  font-weight: 600;
+  border-radius: var(--radius);
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.btn-teal {
+  background-color: var(--teal-primary);
+  color: var(--white);
+}
+
+.btn-teal:hover {
+  background-color: var(--teal-dark);
+  transform: translateY(-2px);
+}
+
+.btn-nav {
+  background-color: var(--teal-primary);
+  color: var(--white) !important;
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600 !important;
+}
+
+.btn-outline {
+  border: 1.5px solid var(--teal-primary);
+  color: var(--teal-primary);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background-color: var(--teal-light);
+}
+
+.btn-white {
+  background-color: var(--white);
+  color: var(--teal-dark);
+}
+
+.btn-white:hover {
+  background-color: var(--teal-light);
+}
+
+/* Inner Page Banner Header */
+.page-banner {
+  background-color: var(--teal-light);
+  border-bottom: 1px solid #ccfbf1;
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+}
+
+.page-banner h1 {
+  font-size: 2.35rem;
+  font-weight: 800;
+  color: var(--slate-dark);
+  margin-bottom: 0.5rem;
+}
+
+.page-banner p {
+  color: var(--slate-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+}
+
+/* Split Hero Section (Home) */
+.hero {
+  background-color: var(--white);
+  padding: 4.5rem 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.hero-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.clinic-badge {
+  display: inline-block;
+  background-color: var(--teal-light);
+  color: var(--teal-dark);
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1.18;
+  margin-bottom: 1.2rem;
+  color: var(--slate-dark);
+}
+
+.hero p {
+  color: var(--slate-muted);
+  font-size: 1.08rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 20px 30px -10px rgba(15, 23, 42, 0.12);
+  display: block;
+}
+
+/* Medical Aid Strip */
+.medical-aid-strip {
+  background-color: var(--teal-light);
+  padding: 1.5rem;
+  border-bottom: 1px solid #ccfbf1;
+}
+
+.aid-grid {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--teal-dark);
+  font-weight: 600;
+}
+
+/* Sections & Grids */
+.section {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 3rem;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  color: var(--slate-muted);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.75rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-light);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+  font-size: 1.75rem;
+  margin-bottom: 0.8rem;
+  display: inline-block;
+}
+
+.card h3 {
+  font-size: 1.18rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: var(--slate-muted);
+  font-size: 0.94rem;
+}
+
+.treatment-meta {
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border-light);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--teal-dark);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* About Page Feature Split */
+.about-feature {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 3rem;
+  align-items: center;
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 1px solid var(--border-light);
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.04);
+}
+
+.about-feature-img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+.about-feature-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  margin-bottom: 0.85rem;
+  color: var(--slate-dark);
+}
+
+.about-feature-text {
+  color: var(--slate-muted);
+  margin-bottom: 1rem;
+  font-size: 0.98rem;
+}
+
+.about-checklist {
+  list-style: none;
+  margin-top: 1.25rem;
+}
+
+.about-checklist li {
+  margin-bottom: 0.55rem;
+  font-weight: 600;
+  color: var(--teal-dark);
+  font-size: 0.95rem;
+}
+
+/* Forms & Contact Page */
+.booking-wrapper {
+  background-color: var(--white);
+  border-radius: 16px;
+  border: 1px solid var(--border-light);
+  padding: 2.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+.card-heading {
+  font-size: 1.65rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.card-subtext {
+  color: var(--slate-muted);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.clinic-hours {
+  list-style: none;
+  margin-top: 1.5rem;
+}
+
+.clinic-hours li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.94rem;
+  color: var(--slate-muted);
+}
+
+.clinic-hours li strong {
+  color: var(--slate-dark);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  color: var(--slate-dark);
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--teal-primary);
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 110px;
+}
+
+/* CTA Banner */
+.cta-box {
+  background-color: var(--teal-dark);
+  color: var(--white);
+  padding: 3.5rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.cta-box h2 {
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+.cta-box p {
+  color: #ccfbf1;
+  margin-bottom: 1.75rem;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Utility Classes */
+.pad-top-zero {
+  padding-top: 0 !important;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: var(--white);
+  padding: 0.8rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+  font-size: 0.92rem;
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--slate-dark);
+  color: #94a3b8;
+  text-align: center;
+  padding: 2.2rem 1.5rem;
+  font-size: 0.88rem;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .hero-container,
+  .about-feature,
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero h1 {
+    font-size: 2.15rem;
+  }
+  .nav-links {
+    gap: 1rem;
+  }
+}

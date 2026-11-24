@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Book | Coastal Smile Dental Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="top-info-bar">
+    📍 12 Begonia Road, Durban North • Direct Email & Online Appointment Requests
+  </div>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">COASTAL<span>SMILE</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="treatments.html">Treatments</a></li>
+        <li><a href="about.html">Our Clinic</a></li>
+        <li><a href="contact.html" class="btn-nav active">Book / Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="page-banner">
+    <h1>Book an Appointment or Send a Query</h1>
+    <p>Have a question about medical aid cover, pricing, or symptoms? Send a message directly to our inbox below.</p>
+  </div>
+
+  <section class="section">
+    <div class="grid-2">
+      
+      <!-- Left Column: Direct Email Query Form -->
+      <div class="booking-wrapper">
+        <span class="clinic-badge">Direct Inbox</span>
+        <h2 class="card-heading">Send Us a Query</h2>
+        <p class="card-subtext">Fill in your details below and your message will be emailed straight to our team.</p>
+
+        <form action="https://api.web3forms.com/submit" method="POST" id="queryEmailForm">
+          <input type="hidden" name="access_key" value="761ac851-a89a-4e04-9ebe-e04353947f3c" />
+          <input type="hidden" name="subject" value="New Website Query - Coastal Smile Dental" />
+
+          <div class="form-group">
+            <label class="form-label" for="senderName">Your Full Name</label>
+            <input type="text" id="senderName" name="name" class="form-control" placeholder="e.g. Priya Govender" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="senderEmail">Your Email Address (So we can reply)</label>
+            <input type="email" id="senderEmail" name="email" class="form-control" placeholder="e.g. priya@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="queryTopic">Topic</label>
+            <select id="queryTopic" name="topic" class="form-control">
+              <option>Medical Aid & Pricing Question</option>
+              <option>Appointment Availability</option>
+              <option>Emergency Toothache Advice</option>
+              <option>General Feedback / Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="senderMessage">Your Message</label>
+            <textarea id="senderMessage" name="message" class="form-control" placeholder="Type your question here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-teal full-width">✉️ Send Email Message</button>
+        </form>
+      </div>
+
+      <!-- Right Column: Quick Appointment Slot Request & Clinic Hours -->
+      <div class="booking-wrapper">
+        <span class="clinic-badge">Fast Scheduling</span>
+        <h2 class="card-heading">Request a Time Slot</h2>
+        <p class="card-subtext">Prefer a callback to confirm a specific day? Leave your preferred date below.</p>
+
+        <form id="appointmentForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="patientName">Patient Name</label>
+              <input type="text" id="patientName" class="form-control" placeholder="Full Name" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="patientPhone">Phone / WhatsApp</label>
+              <input type="tel" id="patientPhone" class="form-control" placeholder="082 555 0192" required />
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="treatmentType">Treatment</label>
+              <select id="treatmentType" class="form-control">
+                <option>Check-Up & Cleaning</option>
+                <option>Emergency Toothache</option>
+                <option>Teeth Whitening</option>
+                <option>Filling / Crown</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="preferredDate">Preferred Date</label>
+              <input type="date" id="preferredDate" class="form-control" required />
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-outline full-width">Request Appointment Callback</button>
+        </form>
+
+        <ul class="clinic-hours">
+          <li><span>Monday – Friday</span> <strong>08:00 – 17:30</strong></li>
+          <li><span>Saturday</span> <strong>08:30 – 13:00</strong></li>
+          <li><span>Phone</span> <strong>031 555 0144</strong></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <a href="https://wa.me/27315550144" class="whatsapp-float" target="_blank">
+    💬 WhatsApp Reception
+  </a>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Coastal Smile Dental Studio • HPCSA Registered Practice • Portfolio Demo Project.</p>
+  </footer>
+
+</body>
+</html>
